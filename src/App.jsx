@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AppLayout from './layouts/AppLayout';
 import RedirectLink from './pages/Redirect';
 import LandingPage from './pages/LandingPage';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/DashBoard'
 import LinkPage from './pages/Link';
 import Auth from './pages/Auth';
 import UrlProvider from './Context';
