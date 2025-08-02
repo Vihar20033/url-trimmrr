@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AppLayout from './layouts/AppLayout';
 import RedirectLink from './pages/Redirect';
 import LandingPage from './pages/LandingPage';
-import Dashboard from './pages/Dashboard';
+import DashBoard from './pages/DashBoard';
 import LinkPage from './pages/Link';
 import Auth from './pages/Auth';
 import UrlProvider from './Context';
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         path: '/dashboard',
         element: (
             <RequireAuth>
-              <Dashboard />
+              <DashBoard />
           </RequireAuth>
         ),
       },

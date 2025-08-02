@@ -1,4 +1,3 @@
-// can add sonner from shadcn ui after link created
 
 import {useEffect, useState} from "react";
 import {BarLoader} from "react-spinners";
@@ -16,7 +15,7 @@ import {getClicksForUrls} from "@/db/apiClicks";
 import {UrlState} from "@/context";
 import { Button } from "@/components/ui/button";
 
-const Dashboard = () => {
+const DashBoard = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const {user} = UrlState();
   const {loading, error, data: urls, fn: fnUrls} = useFetch(getUrls, user.id);
@@ -85,4 +84,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default DashBoard;
