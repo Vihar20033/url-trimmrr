@@ -1,7 +1,10 @@
-/* eslint-disable react/prop-types */
-
-const Error = ({message}) => {
-  return <span className="text-sm text-red-400">{message}</span>;
+// src/components/Error.jsx
+const Error = ({ message }) => {
+  return (
+    <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
+      <strong>Error:</strong> {message || "Something went wrong."}
+    </div>
+  );
 };
 
 export default Error;
